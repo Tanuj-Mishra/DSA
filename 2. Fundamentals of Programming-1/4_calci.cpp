@@ -28,3 +28,4 @@ int main() {
 
     return 0;
 }
+// here as soon as characeter is entered after integer, then variable for input changes, 2+3 -> 2(integer), +(addition), 3(integer)
