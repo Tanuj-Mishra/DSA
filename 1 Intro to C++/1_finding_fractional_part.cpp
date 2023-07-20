@@ -8,7 +8,7 @@ int main() {
 	cout<<"Fractional Part: ";
 	if(a>0) {
 		cout<<a-(int)a;
-	}a
+	}
 	else {
 		int b = a;
 		b = -(b-1);

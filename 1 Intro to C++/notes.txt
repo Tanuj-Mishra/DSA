@@ -11,3 +11,10 @@ x = x +8; // compound assignment operator
 The main difference between the two statements is that the assignment-increment operator is more efficient. 
 This is because the compiler can optimize the code to avoid the temporary variable that is created in the compound assignment.
 **************************************************************************************************************************************************************************
+p += q -= p;
+
+is same as
+
+q = q - p;
+p = p + q;
+**************************************************************************************************************************************************************************
