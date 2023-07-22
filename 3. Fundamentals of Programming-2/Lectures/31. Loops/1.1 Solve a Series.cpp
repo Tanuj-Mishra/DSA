@@ -6,12 +6,12 @@ int main() {
     int n;
     cout << "Enter number: ";
     cin >> n;
-    int ans = 1;
+    int sum = 0;
 
     for(int i = 1; i <= n; i++) {
-        ans*= i;
+        i%2==0 ? sum-=i : sum+= i;
     }
+    cout << sum << endl;
 
-    cout << "Factorial: " << ans << endl;
     return 0;
 }

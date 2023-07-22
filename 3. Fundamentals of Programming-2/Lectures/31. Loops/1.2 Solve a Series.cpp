@@ -6,12 +6,8 @@ int main() {
     int n;
     cout << "Enter number: ";
     cin >> n;
-    int ans = 1;
 
-    for(int i = 1; i <= n; i++) {
-        ans*= i;
-    }
+    n%2==0 ? cout << -(n/2) << endl : cout << (n-n/2) << endl;
 
-    cout << "Factorial: " << ans << endl;
     return 0;
 }
