@@ -1,3 +1,5 @@
+// @ 01:23
+// O(1)
 #include<iostream>
 using namespace std;
 

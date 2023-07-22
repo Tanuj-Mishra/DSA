@@ -1,3 +1,5 @@
+// @ 01:23
+// O(n)
 #include<iostream>
 using namespace std;
 
