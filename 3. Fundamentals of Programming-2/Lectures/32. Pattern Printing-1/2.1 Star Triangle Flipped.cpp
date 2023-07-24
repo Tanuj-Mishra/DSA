@@ -8,7 +8,7 @@ int main() {
     cout << "Enter n: ";
     cin >> n;
 
-    int print;
+    string print = "*";
     string space = " ";
     
     for(int row=0; row<n; row++) {
@@ -16,8 +16,7 @@ int main() {
             cout << space;
         }
         
-        print=1;
-        for(int col=0; col<=row; col++, print++) {
+        for(int col=0; col<=row; col++) {
             cout << print;
         }
         cout << endl;
