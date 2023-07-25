@@ -12,13 +12,8 @@ int main() {
     string space = " ";
     
     for(int row=0; row<n; row++) {
-        for(int col=0; col<n-row-1; col++) {
-            cout << space;
-        }
-        
-        print=1;
-        for(int col=0; col<=row; col++, print++) {
-            cout << print;
+        for(int col=0; col<n; col++) {
+            cout << row+1 << space;
         }
         cout << endl;
     }
