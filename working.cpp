@@ -9,25 +9,30 @@ int main() {
     cout << "Enter n: ";
     cin >> n;
 
-    int print;
+    string print = "*";
     string space = " ";
 
     int nsp=n-1;
     int nst=1;
-    
-    for(int row=0; row<n; row++) {
+    for(int row=0; row<2*n-1; row++) {
         // spaces
-        for(int col=0; col<nsp; col++) {
+        for(int spaces=0; spaces < nsp; spaces++) {
             cout << space;
         }
-        // number
-        for(int col=0, print=1; col<nst; col++) {
-            cout << print << space;
-            col<row ? print++ : print--;
+        // star
+        for(int stars=0; stars<nst; stars++) {
+            cout << print;
         }
-        nsp--;
-        nst+=2;
         cout << endl;
+
+        if(row<=n/2) {
+            nsp--;
+            nst += 2;
+        }
+        else {
+            nsp++;
+            nst -=2;
+        }
     }
 
     return 0;
