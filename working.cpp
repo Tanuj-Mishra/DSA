@@ -9,16 +9,24 @@ int main() {
     cout << "Enter n: ";
     cin >> n;
 
-    string print = "*";
+    int print;
     string space = " ";
+
+    int nsp=n-1;
+    int nst=1;
     
     for(int row=0; row<n; row++) {
-        for(int col=0; col<n-row-1; col++) {
+        // spaces
+        for(int col=0; col<nsp; col++) {
             cout << space;
         }
-        for(int col=0; col<2*row+1; col++) {
-            cout << print;
+        // number
+        for(int col=0, print=1; col<nst; col++) {
+            cout << print << space;
+            col<row ? print++ : print--;
         }
+        nsp--;
+        nst+=2;
         cout << endl;
     }
 
