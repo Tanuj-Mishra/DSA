@@ -1,5 +1,4 @@
 // Pending
-// In lecture, an alternate method is discussed.
 #include<iostream>
 #include<string>
 using namespace std;
