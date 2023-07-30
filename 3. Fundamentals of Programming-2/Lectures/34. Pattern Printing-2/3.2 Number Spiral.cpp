@@ -1,5 +1,5 @@
 // Pending
-
+// how to different number of if-else condtition based on given input 
 #include<iostream>
 #include<string>
 using namespace std;
